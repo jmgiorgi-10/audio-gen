@@ -17,20 +17,20 @@ pip3 install torch
 ```
 
 Variational autoencoder (VAE) consists of two primary components:
-1. **Encoder**: Maps the input data $\mathbf{x}$ to a probabilistic distribution over the latent variables \( \mathbf{z} \), typically a Gaussian distribution \( \mathcal{N}(\mu, \sigma^2) \).
-2. **Decoder**: Reconstructs the input \( \mathbf{x} \) from samples of the latent variables \( \mathbf{z} \).
+1. **Encoder**: Maps the input data $\mathbf{x}$ to a probabilistic distribution over the latent variables $\mathbf{z}$, typically a Gaussian distribution $\mathcal{N}(\mu, \sigma^2)$.
+2. **Decoder**: Reconstructs the input $\mathbf{x}$ from samples of the latent variables $\mathbf{z}$.
 
 ### The Variational Approach
 
 
 ### Core Idea
 A VAE consists of two primary components:
-1. **Encoder**: Maps the input data \( \mathbf{x} \) to a probabilistic distribution over the latent variables \( \mathbf{z} \), typically a Gaussian distribution \( \mathcal{N}(\mu, \sigma^2) \).
-2. **Decoder**: Reconstructs the input \( \mathbf{x} \) from samples of the latent variables \( \mathbf{z} \).
+1. **Encoder**: Maps the input data \( \mathbf{x} \) to a probabilistic distribution over the latent variables $\mathbf{z}$, typically a Gaussian distribution $\mathcal{N}(\mu, \sigma^2)$.
+2. **Decoder**: Reconstructs the input \( \mathbf{x} \) from samples of the latent variables $\mathbf{z}$.
 
 ### The Variational Approach
 
-The key idea behind VAE is to approximate the true posterior distribution $ p(\mathbf{z} | \mathbf{x}) $ of the latent variables given the data, which is typically intractable. Instead, VAE introduces an **approximating distribution** \( q_{\phi}(\mathbf{z} | \mathbf{x}) \), where \( \phi \) are the parameters of the encoder.
+The key idea behind VAE is to approximate the true posterior distribution $ p(\mathbf{z} | \mathbf{x}) $ of the latent variables given the data, which is typically intractable. Instead, VAE introduces an **approximating distribution** $q_{\phi}(\mathbf{z} | \mathbf{x})$, where $\phi$ are the parameters of the encoder.
 
 The goal is to maximize the **Evidence Lower Bound (ELBO)**, which is a lower bound on the log-likelihood of the observed data. The ELBO is given by:
 
