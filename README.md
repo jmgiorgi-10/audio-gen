@@ -17,7 +17,7 @@ pip3 install torch
 ```
 
 Variational autoencoder (VAE) consists of two primary components:
-1. **Encoder**: Maps the input data \( \mathbf{x} \) to a probabilistic distribution over the latent variables \( \mathbf{z} \), typically a Gaussian distribution \( \mathcal{N}(\mu, \sigma^2) \).
+1. **Encoder**: Maps the input data $\mathbf{x}$ to a probabilistic distribution over the latent variables \( \mathbf{z} \), typically a Gaussian distribution \( \mathcal{N}(\mu, \sigma^2) \).
 2. **Decoder**: Reconstructs the input \( \mathbf{x} \) from samples of the latent variables \( \mathbf{z} \).
 
 ### The Variational Approach
