@@ -1,11 +1,13 @@
 # audio-gen
 
-**Aproach**
+**Approach**
 
 The idea is to train a variational autoencoder model from an opensource dataset (specifcally, the Mozilla Common Voice Corpus), and then use your devices to fine-tune the model in real time (with transfer learning),
 and adapt to your individual voice. 
 
-**Libraries**
+**Prerequisites**
+
+Activate a virtual environment for <=Python3.11 and install required dependencies.
 
 ```bash
 python3 -m venv mlenv
