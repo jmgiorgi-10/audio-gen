@@ -30,7 +30,7 @@ A VAE consists of two primary components:
 
 ### The Variational Approach
 
-The key idea behind VAE is to approximate the true posterior distribution \( p(\mathbf{z} | \mathbf{x}) \) of the latent variables given the data, which is typically intractable. Instead, VAE introduces an **approximating distribution** \( q_{\phi}(\mathbf{z} | \mathbf{x}) \), where \( \phi \) are the parameters of the encoder.
+The key idea behind VAE is to approximate the true posterior distribution $ p(\mathbf{z} | \mathbf{x}) $ of the latent variables given the data, which is typically intractable. Instead, VAE introduces an **approximating distribution** \( q_{\phi}(\mathbf{z} | \mathbf{x}) \), where \( \phi \) are the parameters of the encoder.
 
 The goal is to maximize the **Evidence Lower Bound (ELBO)**, which is a lower bound on the log-likelihood of the observed data. The ELBO is given by:
 
