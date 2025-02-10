@@ -16,7 +16,7 @@ pip3 install numpy
 pip3 install torch
 ```
 
-### Variational auto-encoder (vae)
+## Variational auto-encoder (vae)
 Consists of two primary components:
 1. **Encoder**: Maps the input data $\mathbf{x}$ to a probabilistic distribution over the latent variables $\mathbf{z}$, typically a Gaussian distribution $\mathcal{N}(\mu, \sigma^2)$.
 2. **Decoder**: Reconstructs the input $\mathbf{x}$ from samples of the latent variables $\mathbf{z}$.
@@ -33,7 +33,7 @@ Where:
 - $p(\mathbf{z})$ is the prior distribution on the latent variables (usually a standard Gaussian \( \mathcal{N}(0, I) \)).
 - $\text{KL}$ denotes the **Kullback-Leibler divergence**, which measures how much \( q_{\phi}(\mathbf{z} | \mathbf{x}) \) deviates from the prior \( p(\mathbf{z}) \).
 
-### Loss Function
+## Loss Function
 
 The VAE loss function combines two terms:
 1. **Reconstruction Loss**: Measures how well the decoder reconstructs the input data $\mathbf{x}$ from the latent variables $\mathbf{z}$. It is typically the negative log-likelihood of the data under the decoder, often using mean squared error or binary cross-entropy.
